@@ -8,7 +8,27 @@
         <!--Interface Controller-->
         <scene sceneID="aou-V4-d1y">
             <objects>
-                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="PupUpWatch" customModuleProvider="target"/>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="PupUpWatch" customModuleProvider="target">
+                    <items>
+                        <table alignment="left" id="UA1-oR-j8G">
+                            <items>
+                                <tableRow id="6WM-76-E4L" customClass="TableRowController" customModule="PupUpWatch_Extension">
+                                    <group key="rootItem" width="1" height="147.5" alignment="left" id="43q-lR-42w">
+                                        <items>
+                                            <imageView height="141" alignment="left" contentMode="scaleAspectFill" id="Evg-GC-UZk"/>
+                                        </items>
+                                    </group>
+                                    <connections>
+                                        <outlet property="puppyImageView" destination="Evg-GC-UZk" id="Ucp-do-qMW"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                    </items>
+                    <connections>
+                        <outlet property="puppyTable" destination="UA1-oR-j8G" id="etx-Cd-pzS"/>
+                    </connections>
+                </controller>
             </objects>
             <point key="canvasLocation" x="220" y="345"/>
         </scene>

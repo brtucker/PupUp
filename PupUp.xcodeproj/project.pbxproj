@@ -26,6 +26,8 @@
 		D8C6D17D1C70F7B9004D4D4B /* FlickrSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8C6D17C1C70F7B9004D4D4B /* FlickrSearch.swift */; };
 		D8C6D17F1C7270C6004D4D4B /* PhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8C6D17E1C7270C6004D4D4B /* PhotoCell.swift */; };
 		D8C6D1811C72B871004D4D4B /* PhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8C6D1801C72B871004D4D4B /* PhotoViewController.swift */; };
+		D8C6D1841C72CD11004D4D4B /* FlickrSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8C6D17C1C70F7B9004D4D4B /* FlickrSearch.swift */; };
+		D8C6D1861C72CE6A004D4D4B /* TableRowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8C6D1851C72CE6A004D4D4B /* TableRowController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -113,6 +115,7 @@
 		D8C6D17C1C70F7B9004D4D4B /* FlickrSearch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlickrSearch.swift; sourceTree = "<group>"; };
 		D8C6D17E1C7270C6004D4D4B /* PhotoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoCell.swift; sourceTree = "<group>"; };
 		D8C6D1801C72B871004D4D4B /* PhotoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoViewController.swift; sourceTree = "<group>"; };
+		D8C6D1851C72CE6A004D4D4B /* TableRowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableRowController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -219,6 +222,7 @@
 		D8B680AC1C6F806D00902CBD /* PupUpWatch Extension */ = {
 			isa = PBXGroup;
 			children = (
+				D8C6D1851C72CE6A004D4D4B /* TableRowController.swift */,
 				D8B680AF1C6F806D00902CBD /* InterfaceController.swift */,
 				D8B680B11C6F806D00902CBD /* ExtensionDelegate.swift */,
 				D8B680B31C6F806D00902CBD /* NotificationController.swift */,
@@ -461,6 +465,8 @@
 			files = (
 				D8B680B41C6F806D00902CBD /* NotificationController.swift in Sources */,
 				D8B680B21C6F806D00902CBD /* ExtensionDelegate.swift in Sources */,
+				D8C6D1861C72CE6A004D4D4B /* TableRowController.swift in Sources */,
+				D8C6D1841C72CD11004D4D4B /* FlickrSearch.swift in Sources */,
 				D8B680B01C6F806D00902CBD /* InterfaceController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

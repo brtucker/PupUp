@@ -38,24 +38,23 @@ class FlickrPhoto : Equatable {
     func loadLargeImage(completion: (flickrPhoto:FlickrPhoto, error: NSError?) -> Void) {
         let loadURL = flickrImageURL("b")
         let loadRequest = NSURLRequest(URL:loadURL)
-        NSURLConnection.sendAsynchronousRequest(loadRequest,
-            queue: NSOperationQueue.mainQueue()) {
-                response, data, error in
-                
-                if error != nil {
-                    completion(flickrPhoto: self, error: error)
-                    return
-                }
-                
-                if data != nil {
-                    let returnedImage = UIImage(data: data!)
-                    self.largeImage = returnedImage
-                    completion(flickrPhoto: self, error: nil)
-                    return
-                }
-                
+        NSURLSession.sharedSession().dataTaskWithRequest(loadRequest, completionHandler: {
+            (data, response, error) in
+            if error != nil {
+                completion(flickrPhoto: self, error: error)
+                return
+            }
+            
+            if data != nil {
+                let returnedImage = UIImage(data: data!)
+                self.largeImage = returnedImage
                 completion(flickrPhoto: self, error: nil)
-        }
+                return
+            }
+            
+            completion(flickrPhoto: self, error: nil)
+
+        }).resume()
     }
     
     func sizeToFillWidthOfSize(size:CGSize) -> CGSize {
@@ -92,7 +91,8 @@ class Flickr {
         
         let searchURL = flickrSearchURLForSearchTerm(searchTerm)
         let searchRequest = NSURLRequest(URL: searchURL)
-        NSURLConnection.sendAsynchronousRequest(searchRequest, queue: processingQueue) {response, data, error in
+        NSURLSession.sharedSession().dataTaskWithRequest(searchRequest, completionHandler: {
+            (data, response, error) in
             if error != nil {
                 completion(results: nil,error: error)
                 return
@@ -144,8 +144,10 @@ class Flickr {
             dispatch_async(dispatch_get_main_queue(), {
                 completion(results:FlickrSearchResults(searchTerm: searchTerm, searchResults: flickrPhotos), error: nil)
             })
-        }
+
+        }).resume()
     }
+    
     
     private func flickrSearchURLForSearchTerm(searchTerm:String) -> NSURL {
         
