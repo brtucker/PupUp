@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		D8B6806A1C6F804200902CBD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8B680691C6F804200902CBD /* AppDelegate.swift */; };
-		D8B6806C1C6F804200902CBD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8B6806B1C6F804200902CBD /* ViewController.swift */; };
 		D8B6806F1C6F804200902CBD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8B6806D1C6F804200902CBD /* Main.storyboard */; };
 		D8B680721C6F804200902CBD /* PupUp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D8B680701C6F804200902CBD /* PupUp.xcdatamodeld */; };
 		D8B680741C6F804200902CBD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D8B680731C6F804200902CBD /* Assets.xcassets */; };
@@ -23,6 +22,10 @@
 		D8B680B41C6F806D00902CBD /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8B680B31C6F806D00902CBD /* NotificationController.swift */; };
 		D8B680B61C6F806D00902CBD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D8B680B51C6F806D00902CBD /* Assets.xcassets */; };
 		D8B680BA1C6F806D00902CBD /* PupUpWatch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = D8B6809C1C6F806D00902CBD /* PupUpWatch.app */; };
+		D8B680CA1C6FE4B200902CBD /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8B680C91C6FE4B200902CBD /* CollectionViewController.swift */; };
+		D8C6D17D1C70F7B9004D4D4B /* FlickrSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8C6D17C1C70F7B9004D4D4B /* FlickrSearch.swift */; };
+		D8C6D17F1C7270C6004D4D4B /* PhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8C6D17E1C7270C6004D4D4B /* PhotoCell.swift */; };
+		D8C6D1811C72B871004D4D4B /* PhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8C6D1801C72B871004D4D4B /* PhotoViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -84,7 +87,6 @@
 /* Begin PBXFileReference section */
 		D8B680661C6F804200902CBD /* PupUp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PupUp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8B680691C6F804200902CBD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D8B6806B1C6F804200902CBD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		D8B6806E1C6F804200902CBD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D8B680711C6F804200902CBD /* PupUp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PupUp.xcdatamodel; sourceTree = "<group>"; };
 		D8B680731C6F804200902CBD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -107,6 +109,10 @@
 		D8B680B31C6F806D00902CBD /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
 		D8B680B51C6F806D00902CBD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D8B680B71C6F806D00902CBD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D8B680C91C6FE4B200902CBD /* CollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
+		D8C6D17C1C70F7B9004D4D4B /* FlickrSearch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlickrSearch.swift; sourceTree = "<group>"; };
+		D8C6D17E1C7270C6004D4D4B /* PhotoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoCell.swift; sourceTree = "<group>"; };
+		D8C6D1801C72B871004D4D4B /* PhotoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -169,12 +175,15 @@
 			isa = PBXGroup;
 			children = (
 				D8B680691C6F804200902CBD /* AppDelegate.swift */,
-				D8B6806B1C6F804200902CBD /* ViewController.swift */,
 				D8B6806D1C6F804200902CBD /* Main.storyboard */,
 				D8B680731C6F804200902CBD /* Assets.xcassets */,
 				D8B680751C6F804200902CBD /* LaunchScreen.storyboard */,
 				D8B680781C6F804200902CBD /* Info.plist */,
 				D8B680701C6F804200902CBD /* PupUp.xcdatamodeld */,
+				D8B680C91C6FE4B200902CBD /* CollectionViewController.swift */,
+				D8C6D17C1C70F7B9004D4D4B /* FlickrSearch.swift */,
+				D8C6D17E1C7270C6004D4D4B /* PhotoCell.swift */,
+				D8C6D1801C72B871004D4D4B /* PhotoViewController.swift */,
 			);
 			path = PupUp;
 			sourceTree = "<group>";
@@ -421,9 +430,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D8B680CA1C6FE4B200902CBD /* CollectionViewController.swift in Sources */,
+				D8C6D17F1C7270C6004D4D4B /* PhotoCell.swift in Sources */,
 				D8B680721C6F804200902CBD /* PupUp.xcdatamodeld in Sources */,
-				D8B6806C1C6F804200902CBD /* ViewController.swift in Sources */,
+				D8C6D17D1C70F7B9004D4D4B /* FlickrSearch.swift in Sources */,
 				D8B6806A1C6F804200902CBD /* AppDelegate.swift in Sources */,
+				D8C6D1811C72B871004D4D4B /* PhotoViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -593,11 +605,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = PupUp/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.tucker.PupUp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -605,11 +622,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = PupUp/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.tucker.PupUp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -742,6 +764,7 @@
 				D8B680931C6F804200902CBD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D8B680941C6F804200902CBD /* Build configuration list for PBXNativeTarget "PupUpTests" */ = {
 			isa = XCConfigurationList;
@@ -750,6 +773,7 @@
 				D8B680961C6F804200902CBD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D8B680971C6F804200902CBD /* Build configuration list for PBXNativeTarget "PupUpUITests" */ = {
 			isa = XCConfigurationList;
@@ -758,6 +782,7 @@
 				D8B680991C6F804200902CBD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D8B680BB1C6F806D00902CBD /* Build configuration list for PBXNativeTarget "PupUpWatch Extension" */ = {
 			isa = XCConfigurationList;
@@ -766,6 +791,7 @@
 				D8B680BD1C6F806D00902CBD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D8B680BF1C6F806D00902CBD /* Build configuration list for PBXNativeTarget "PupUpWatch" */ = {
 			isa = XCConfigurationList;
@@ -774,6 +800,7 @@
 				D8B680C11C6F806D00902CBD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
